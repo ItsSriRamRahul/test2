@@ -1,0 +1,66 @@
+.nav {
+  display: flex;
+  background-color: var(--race-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav > h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 5px;
+}
+.search-box {
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1e;
+  border-radius: 50px;
+  height: 40px;
+  margin-left: 20px;
+  position: relative;
+}
+.inp-nav {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 20px;
+  border-radius: 2px;
+  width: 100%;
+  color: white;
+}
+.header-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0.4;
+}
+.header-items > p {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: max-content;
+}
+.search-box > .MuiSvgIcon-root {
+  font-size: 30px !important;
+  color: var(--race-color);
+  padding-left: 20px;
+}
+.search-box::after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  color: red;
+  background-color: #e1e1e4;
+  height: 5px;
+  width: 90%;
+  top: 100%;
+  transform: translateX(50px);
+  border-radius: 20px;
+  transition: all 0.7s;
+}
+.search-box:hover::after {
+  opacity: 1;
+}
+.search-box:active::after {
+  opacity: 1;
+}

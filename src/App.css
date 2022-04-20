@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+body {
+  --race-color: rgb(34, 158, 189);
+  --race-back: #1c1c1e;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.card-row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 50px;
+  overflow-x: scroll;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+.card-row > h1 {
+  padding: 0;
+  letter-spacing: 5px;
+  font-weight: 600;
+  padding-left: 50px;
+
+  font-size: 25px;
+  margin-top: 5px;
+}
+.rec-arrow {
+  color: var(--race-color) !important;
+  transition: all 0.3s;
+  background-color: var(--race-back) !important;
+  margin: 15px !important;
+}
+.rec-arrow:hover {
+  border-radius: 2px;
+  color: var(--race-back) !important;
+  background-color: white !important;
+}

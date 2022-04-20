@@ -1,0 +1,11 @@
+.slideshow {
+  background-color: var(--race-back);
+  color: var(--race-color);
+  height: 350px;
+}
+.caoursel-img {
+  height: 350px;
+  width: 900px;
+  object-fit: fill;
+  background-position: center;
+}
